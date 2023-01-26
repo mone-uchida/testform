@@ -11,10 +11,7 @@
 <body>
 <div class="container">
   <h2 class="">お問い合わせフォーム</h2>
-    <div class="clear-message">
-      <?php if
-        ( isset($error) && empty($error)) echo "入力に成功しました。"; ?>
-    </div>
+    <?php if( isset($error) && empty($error)) echo "<div class='clear-message'>入力に成功しました。</div>"; ?>
   <p>以下のフォームからお問い合わせください。</p>
   <form id="form" method="post">
     <div class="form-group">
@@ -39,7 +36,7 @@
       <div class="form-label">
         <label for="faculty">学部</label>
       </div>
-        <?php
+      <?php
         foreach($facultySelect as $key => $value){
           if(isset($faculty) && $key == $faculty){
               echo "<input type='radio' name='faculty' class='form-radio' value='$key' checked>".$value;
@@ -47,7 +44,7 @@
               echo "<input type='radio' name='faculty'class='form-radio' value='$key'>".$value;
           }
         }
-        ?>
+      ?>
       <div class="error-message">
         <?php if(isset($error['faculty'])) echo $error['faculty'] ?>
       </div>
