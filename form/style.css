@@ -38,8 +38,7 @@
   border-bottom: 1px solid #ddd;
 }
 .form-label {
-  width: 100%;
-  max-width: 248px;
+  width: 20%;
   letter-spacing: 0.05em;
   font-weight: bold;
   font-size: 18px;
@@ -47,7 +46,7 @@
 .form-input {
   border: 1px solid #ddd;
   border-radius: 6px;
-  margin-left: 40px;
+  margin-left: 10px;
   padding-left: 1em;
   padding-right: 1em;
   height: 48px;
