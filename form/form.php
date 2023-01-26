@@ -11,8 +11,7 @@
 <body>
 <div class="container">
   <h2 class="">お問い合わせフォーム</h2>
-    <?php if( isset($error) && empty($error)) echo "<div class='clear-message'>入力に成功しました。</div>"; ?>
-  <p>以下のフォームからお問い合わせください。</p>
+  <?php if( isset($error) && empty($error)) echo "<div class='clear-message'>入力に成功しました。</div>"; ?>
   <form id="form" method="post">
     <div class="form-group">
       <div class="form-label">
